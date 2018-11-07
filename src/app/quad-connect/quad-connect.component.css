@@ -1,0 +1,82 @@
+*{
+    background-color: black;
+}
+canvas{
+    margin: 25px;
+    float:left;
+
+}
+
+#info{
+    float:left;
+    width:200px;
+    margin: 15px;
+
+}
+
+.current-turn{
+    width:150px;
+    margin: 0 auto;
+    font-size: 25px;
+    color: yellow;
+    background: black;
+    padding:12px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#scoreboard{
+    width:150px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: lightblue;
+    background: black;
+    padding:12px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+form{
+    margin: 20px;
+
+}
+
+form p, form input{
+   background-color: black; 
+}
+
+form p {
+    width: 600px;
+    
+}
+input{
+    font-family: impact;
+    color:blueviolet;
+    background: black;
+    padding: 4px;
+    letter-spacing: 3px;
+    font-size: 24px;
+    width: 250px;
+    text-transform: uppercase;
+    margin: 15px;
+
+}
+
+label{
+    margin: 4px;
+    padding: 4px;
+    width: 200px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 3px;
+    font-size: 20px;
+
+}
+
+.red{
+    color: red;
+}
+
+.yellow{
+    color: yellow;
+}

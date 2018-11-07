@@ -1,0 +1,42 @@
+
+<div >
+
+        <input id="example"  maxlength="100" size="100"/>
+
+
+        <canvas #game id="game" width="480" height="480"></canvas>
+        
+        
+        <div id="info" [style.background-color]='currentTurnColor$ | async'>
+            <h2 class="current-turn" [style.color]='currentTurnColor$ | async'>Current turn:
+                <div [style.color]='currentTurnColor$ | async'> 
+                    <p>{{currentTurnColor$ | async}}
+                    <br/> : 
+                    {{ currentPlayer$ | async }}
+                    </p>
+
+                </div>
+            </h2>
+            <div id="scoreboard">
+                <h1> Score board</h1>
+                <h3>  red: {{ redGamesWon$ | async }} <br />
+                    yellow: {{ yellowGamesWon$ | async   }}  </h3>
+        
+            </div>
+        </div>
+
+
+    <form style="clear:both;" [formGroup]="playerFormGroup">
+        
+        <p>
+            <label class="yellow">Yellow player: </label> <input  formControlName="yellowPlayer" type="text" />
+        </p>
+        
+        <p>
+            <label class="red"> Red player: </label> <input formControlName="redPlayer" type="text"/>
+        </p>
+
+    </form>
+</div>
+
+
